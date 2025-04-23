@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appolo - Locais</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar-brand {
+    font-family: 'Medula One', cursive;
+    font-size: 2.5rem; /* aproximadamente 40px */
+    color: #8000ff !important;
+  }
+
+    .nav-link {
+      color: #8000ff !important;
+      margin: 0 10px;
+    }
+    .search-input {
+      border: 2px solid #8000ff;
+      border-radius: 25px;
+      padding: 0.3rem 1rem;
+      outline: none;
+    }
+    .search-icon {
+      color: #8000ff;
+      margin-left: -30px;
+    }
+    .dropdown-toggle {
+      border: 2px solid#8000ff;
+      border-radius: 20px;
+      padding: 6px 12px;
+      color: #000;
+    }
+    .dropdown-menu {
+      padding: 10px;
+    }
+    .rating i {
+      color: #8000ff;
+      margin-left: 4px;
+    }
+    .rating span {
+      margin-left: 5px;
+    }
+    .estabelecimento {
+      border-bottom: 2px solid#8000ff;
+      padding: 1rem 0;
+    }
+    .footer {
+      background-color: #8000ff;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer .social-icons i {
+      margin: 0 10px;
+      font-size: 20px;
+      color: white;
+    }
+    .footer .logo-footer {
+      font-family: 'Medula One', cursive;
+      font-size: 24px;
+    }
+
+    html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > .container {
+  flex: 1; /* ocupa o espaço disponível */
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom px-4">
+    <a class="navbar-brand" href="titulo">Appolo</a>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Solicitantes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Artistas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+      <div class="position-relative">
+        <input type="text" class="search-input" placeholder="Pesquisar...">
+        <i class="fas fa-search position-absolute top-50 end-0 translate-middle-y search-icon"></i>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categorias
+        </button>
+        <ul class="dropdown-menu">
+          <li><input type="checkbox"> Música</li>
+          <li><input type="checkbox"> Dança</li>
+          <li><input type="checkbox"> Teatro</li>
+          <li><input type="checkbox"> Artes Visuais</li>
+          <li><input type="checkbox"> Tatuagem</li>
+          <li><input type="checkbox"> Pintura</li>
+          <li><input type="checkbox"> Grafite</li>
+          <li><input type="checkbox"> Fotografia</li>
+        </ul>
+      </div>
+      <img src="imgs/user-icon.png" alt="User" width="32" height="32" class="ms-2">
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="estabelecimento row align-items-center">
+      <div class="col-md-1"><img src="img/nacoes.jpg" class="img-fluid rounded-circle" width="60"></div>
+      <div class="col-md-8">
+        <strong>Nações Shopping</strong><br>
+        Criciúma, SC<br>
+        Centro comercial
+      </div>
+      <div class="col-md-3 text-end">
+        <div class="rating">
+          <strong>4,9</strong> <i class="fas fa-star"></i><span>96 avaliações</span>
+        </div>
+      </div>
+    </div>
+    <div class="estabelecimento row align-items-center">
+      <div class="col-md-1"><img src="img/lanche.jpg" class="img-fluid rounded-circle" width="60"></div>
+      <div class="col-md-8">
+        <strong>Madero Container Criciúma</strong><br>
+        Criciúma, SC<br>
+        Restaurante
+      </div>
+      <div class="col-md-3 text-end">
+        <div class="rating">
+          <strong>4,7</strong> <i class="fas fa-star"></i><span>68 avaliações</span>
+        </div>
+      </div>
+    </div>
+    <div class="estabelecimento row align-items-center">
+      <div class="col-md-1"><img src="img/prefeitura.jpg" class="img-fluid rounded-circle" width="60"></div>
+      <div class="col-md-8">
+        <strong>Prefeitura de Criciúma</strong><br>
+        Criciúma, SC<br>
+        Instituição
+      </div>
+      <div class="col-md-3 text-end">
+        <div class="rating">
+          <strong>4,0</strong> <i class="fas fa-star"></i><span>269 avaliações</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-purple text-white py-3" style="background-color: #8000ff;">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Ícones redes sociais -->
+      <div class="d-flex align-items-center gap-4 px-3">
+        <a href="#"><i class="bi bi-instagram fs-4 text-white"></i></a>
+        <a href="#"><i class="bi bi-facebook fs-4 text-white"></i></a>
+        <a href="#"><i class="bi bi-envelope-fill fs-4 text-white"></i></a>
+        <a href="#"><i class="bi bi-twitter-x fs-4 text-white"></i></a>
+        <a href="#"><i class="bi bi-linkedin fs-4 text-white"></i></a>
+      </div>
+      <!-- Texto centralizado -->
+      <div class="text-center small flex-fill">
+        <p class="mb-0">
+          © Copyright 2025 · Appolo · Todos os direitos reservados Appolo com Agência de Contratação Online S.A. <br>
+          CNPJ 00.000.000/0000-00 / Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP - CEP: 06.029-902
+        </p>
+      </div>
+  
+      <!-- Logo Appolo à direita -->
+      <div class="pe-4">
+        <span style="font-family: 'Medula One', cursive; font-size: 2rem;">Appolo</span>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
