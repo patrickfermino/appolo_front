@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil Contratante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
+    
+    <style>
+   
+        .container {
+          margin: 10px auto;   
+        }
+
+        .appolo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .appolo-logo {
+            font-size: 60px;
+            color:#8000ff; 
+            font-family: 'Medula One', cursive;
+        }
+        .appolo-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .appolo-nav li {
+            margin-left: 20px;
+        }
+        .appolo-nav a {
+            text-decoration: none;
+            color: #8000ff
+        }
+        .edit-profile-button {
+            background-color:#8000ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+        }
+        .profile-image-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .profile-image {
+            width: 120px;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .profile-details {
+            flex-grow: 1;
+        }
+        .profile-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating-value {
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 5px;
+            color: #ffc107;
+        }
+        .star-icon {
+            color: #ffc107;
+            font-size: 14px;
+            margin-right: 2px;
+        }
+        .solicitacoes-title {
+            font-weight: bold;
+            font-size: 15px;
+            color:#8000ff;
+            margin-bottom: 1%;
+            font-family: "Jost", sans-serif;
+            border-bottom: 3px solid #8000ff; /* Adiciona uma borda inferior roxa */
+             padding-bottom: 5px;
+        }
+        .solicitacao-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        
+        .solicitacao-details {
+            flex-grow: 1;
+        }
+        .solicitacao-buttons button {
+            background-color: #8000ff; /* Cor roxa dos botões */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .solicitacao-buttons button:last-child {
+            background-color:#8000ff; /* Manter a mesma cor para o segundo botão */
+        }
+        .solicitacao-rating {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 15px;
+        }
+        .solicitacao-rating-value {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffc107; /* Cor da avaliação */
+            margin-bottom: 5px;
+        }
+        .solicitacao-rating-stars {
+            color: #ffc107;
+            font-size: 12px;
+        }
+        .appolo-nav{
+           color:#8000ff ; 
+           
+           margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="appolo-header">
+            <div class="appolo-logo">Appolo</div>
+            <nav class="appolo-nav">
+                <ul>
+                    <li><a href="#">Solicitantes</a></li>
+                    <li><a href="#">Artistas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+            <button class="edit-profile-button">Editar perfil</button>
+        </header>
+
+        <section class="profile-info">
+            <div class="profile-image-container">
+                <img src="/img/prefeitura.jpg" alt="Prefeitura de Criciúma" class="profile-image">
+            </div>
+            <div class="profile-details">
+                <div class="profile-name">Prefeitura de Criciúma</div>
+                <div>Criciúma, SC</div>
+                <div>Instituição</div>
+            </div>
+            <div class="rating">
+                <div class="rating-value">4,0</div>
+                <div>
+                    <span class="star-icon">★</span>
+                    <span class="star-icon">★</span>
+                    <span class="star-icon">★</span>
+                    <span class="star-icon">★</span>
+                    <span class="star-icon">☆</span>
+                </div>
+                <div style="font-size: 10px; color: #6c757d; margin-left: 5px;">35 avaliações</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="solicitacoes-title">Últimas solicitações enviadas</h2>
+            <div class="solicitacao-item">
+                <div class="solicitacao-rating">
+                    <div class="solicitacao-rating-value">5,0</div>
+                    <div class="solicitacao-rating-stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <div style="font-size: 10px; color: #6c757d;">2033 avaliações</div>
+                </div>
+                <div class="profile-image-container" style="width: 60px; height: 60px;">
+                    <img src="/img/cassandra.png" alt="Cassandra Lopez" class="profile-image">
+                </div>
+                <div class="solicitacao-details">
+                    <div class="profile-name">Cassandra Lopez</div>
+                    <div>27 anos</div>
+                    <div>Nova Veneza, SC</div>
+                    <div>Grafiteiro, Dançarino</div>
+                </div>
+                <div class="solicitacao-buttons">
+                    <button>Ver solicitação</button>
+                    <button>Ver perfil</button>
+                </div>
+            </div>
+
+            <div class="solicitacao-item">
+                <div class="solicitacao-rating">
+                    <div class="solicitacao-rating-value">4,7</div>
+                    <div class="solicitacao-rating-stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span style="color: #ffc107;">★</span>
+                    </div>
+                    <div style="font-size: 10px; color: #6c757d;">159 avaliações</div>
+                </div>
+                <div class="profile-image-container" style="width: 60px; height: 60px;">
+                    <img src="/img/cantor.png" alt="Emarilio Castro" class="profile-image">
+                </div>
+                <div class="solicitacao-details">
+                    <div class="profile-name">Emarilio Castro</div>
+                    <div>32 anos</div>
+                    <div>Içara, SC</div>
+                    <div>Cantor</div>
+                </div>
+                <div class="solicitacao-buttons">
+                    <button>Ver solicitação</button>
+                    <button>Ver perfil</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
